@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./css/style.css" />
+    <link
+      rel="icon"
+      href="./assets/imagenes/logo.png" />
+    <title>Proyecto-Final</title>
+  </head>
+  <body onscroll="navChange()">
+    <nav>
+      <a href="./index.html">
+        <svg
+          width="200"
+          height="80">
+          <rect
+            x="45"
+            y="5"
+            width="60"
+            height="35"
+            id="mon1"
+            fill="#F0E9D2"></rect>
+          <rect
+            x="50"
+            y="10"
+            width="50"
+            height="25"
+            id="mon2"
+            fill="#495579"></rect>
+          <polygon
+            points="55 45 ,95 45,115 62,30 62"
+            fill="#F0E9D2"
+            id="tec1"></polygon>
+          <polygon
+            points="57 48 ,92 48,104 58,43 58"
+            fill="#495579"
+            id="tec2"></polygon>
+        </svg>
+      </a>
+      <ul class="menu">
+        <li class="menu-item">
+          <a
+            class="menu-link"
+            href="./historia.html"
+            >HISTORIA</a
+          >
+        </li>
+        <li class="menu-item">
+          <a
+            class="menu-link"
+            href="./juguemos.html"
+            >JUGUEMOS</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header-3">
+      <h1 class="titulo-blanco fondo-azul">JUGUEMOS UN POCO</h1>
+    </header>
+
+    <main>
+      <h2 class="espacio-titulo">
+        Armemos el rompecabezas y veamos que imagen es...
+      </h2>
+
+      <section class="juego">
+        <div class="cajas">
+          <div
+            class="caja"
+            id="cajasoltar">
+            <p>Arrastre y suelte la imagen aquí</p>
+          </div>
+          <div
+            class="caja"
+            id="cajasoltar2">
+            <p>Arrastre y suelte la imagen aquí</p>
+          </div>
+          <div
+            class="caja"
+            id="cajasoltar3">
+            <p>Arrastre y suelte la imagen aquí</p>
+          </div>
+        </div>
+
+        <div id="cajaimagenes">
+          <img
+            id="imagen1"
+            src="./assets/imagenes/rompe2.png"
+            alt="imagen-rompecabezas" />
+          <img
+            id="imagen2"
+            src="./assets/imagenes/Rompe1.png"
+            alt="imagen-rompecabezas" />
+          <img
+            id="imagen3"
+            src="./assets/imagenes/Rompe3.png"
+            alt="imagen-rompecabezas" />
+        </div>
+      </section>
+
+      <button
+        onclick="reinicio()"
+        class="botonesVideo reinicio">
+        Reiniciar
+      </button>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
